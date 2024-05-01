@@ -1,0 +1,151 @@
+/* General Body and Layout Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #B23428; /* Primary red color */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center; /* Centering content */
+    align-items: center; /* Align items vertically */
+}
+
+.merlin-title {
+    margin-right: 20px; /* Space between the title and the logo */
+}
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    animation: pulse 14s infinite ease-in-out; /* Apply pulse animation */
+    background: none; /* Ensure no background */
+    border: none; /* Ensure no border */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Start and end at normal size */
+    }
+    50% {
+        transform: scale(0.9); /* Grow by 10% at the middle of the animation */
+    }
+}
+
+.merlin-description span {
+    opacity: 1;
+    animation: blinkText 12s infinite linear;
+}
+
+/* Individual animation delays for each word */
+.merlin-description span:nth-child(1) { animation-delay: 0s; }
+.merlin-description span:nth-child(2) { animation-delay: 1.5s; }
+.merlin-description span:nth-child(3) { animation-delay: 3s; }
+.merlin-description span:nth-child(4) { animation-delay: 4.5s; }
+.merlin-description span:nth-child(5) { animation-delay: 6s; }
+.merlin-description span:nth-child(6) { animation-delay: 7.5s; }
+.merlin-description span:nth-child(7) { animation-delay: 9s; }
+
+@keyframes blinkText {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+
+.merlin-description {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.app-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.app-tile {
+    background: #ffffff;
+    border: 1px solid #D83F30; /* Brighter red for borders */
+    margin: 10px;
+    padding: 20px;
+    width: calc(33% - 20px);
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border-radius: 15px; /* Rounded corners for tiles */
+}
+
+.app-tile:hover {
+    transform: translateY(-5px);
+}
+
+.app-tile img {
+    max-width: 100px;
+}
+
+.app-tile button {
+    background-color: #B23428;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 8px; /* Rounded corners for buttons */
+}
+
+.app-tile button:hover {
+    background-color: #D83F30; /* Brighter red for hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #571913; /* Dark brown for footer background */
+    color: #fff;
+    border-radius: 0; /* Ensures no rounded corners */
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #B23428; /* Adjust color to fit your design */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .app-tile {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .app-tile {
+        width: calc(100% - 20px);
+    }
+}

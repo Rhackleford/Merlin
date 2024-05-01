@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off-Cut Tracker</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+<header>
+    <h1>Off-Cut Tracker</h1>
+</header>
+
+<main>
+    <div class="search-bar">
+        <input type="text" placeholder="Search existing off-cuts...">
+        <button type="button">Search</button>
+    </div>
+
+    <div class="entry-form">
+        <h2>Enter New Off-Cut</h2>
+        <form>
+            <label for="material">Material:</label>
+            <input type="text" id="material" name="material" placeholder="e.g., MAPLEPC19.5MAPLE">
+
+            <label for="length">Length (in):</label>
+            <input type="number" id="length" name="length">
+
+            <label for="width">Width (in):</label>
+            <input type="number" id="width" name="width">
+
+            <label for="thickness">Thickness (mm):</label>
+            <input type="number" id="thickness" name="thickness">
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- Blank Card 1 with Scan Button -->
+    <div class="card">
+        <h2>Remove From Inventory</h2>
+        <p>Content for Card 1 will go here...</p>
+        <button type="button" class="scan-btn">Scan Code</button>
+    </div>
+
+    <!-- Blank Card 2 -->
+    <div class="card">
+        <h2>Reserve Off-Cut</h2>
+        <form>
+            <label for="material">Material:</label>
+            <input type="text" id="res_material" name="material" placeholder="e.g., MAPLEPC19.5MAPLE">
+
+            <label for="length">Length (in):</label>
+            <input type="number" id="res_length" name="length">
+
+            <label for="width">Width (in):</label>
+            <input type="number" id="res_width" name="width">
+
+            <label for="thickness">Thickness (mm):</label>
+            <input type="number" id="res_thickness" name="thickness">
+
+            <label for="thickness">Job Number (AM):</label>
+            <input type="number" id="job_number" name="job_number">
+
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>Contact IT Support | © 2024 Your Company</p>
+</footer>
+</body>
+</html>
